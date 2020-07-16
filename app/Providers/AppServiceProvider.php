@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         /**second commit**/
-        if(\App::enviroment('production')){
+        if(\App::environment('production')){
             \URL::forceScheme('https');
         }
     }
